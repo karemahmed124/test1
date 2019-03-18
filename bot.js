@@ -33,7 +33,7 @@ client.on('guildMemberRemove', member => {
   .addField("ايدي العضو",`${member.id}`)
   .addField("تبقى",`${member.guild.memberCount}`)
   .setThumbnail("https://cdn.onlinewebfonts.com/svg/img_948.png")
-  var channel =member.guild.channels.find('name', general')
+  var channel =member.guild.channels.find('name', 'general')
   if (!channel) return;
         channel.send({embed : embed});
   });
