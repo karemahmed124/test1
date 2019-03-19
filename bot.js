@@ -405,23 +405,6 @@ embed.addField("🌪  الاسم", `**[ ${msg.author.username}#${msg.author.disc
 msg.channel.send({embed: embed})
 }
 });
-
-    client.on('message', message => {
-              if (!message.channel.guild) return;
-      if(message.content =='*members')
-      var IzRo = new Discord.RichEmbed()
-      .setThumbnail(message.author.avatarURL)
-      .setFooter(message.author.username, message.author.avatarURL) 
-      .setTitle(':tulip:| Members info')
-      .addBlankField(true)
-      .addField(':green_book:| الاونلاين ',
-      `${message.guild.members.filter(m=>m.presence.status == 'online').size}`)
-      .addField(':closed_book:| dnd',`${message.guild.members.filter(m=>m.presence.status == 'dnd').size}`)
-      .addField(':orange_book:| idle',`${message.guild.members.filter(m=>m.presence.status == 'idle').size}`)
-      .addField(':notebook:| offline ',`${message.guild.members.filter(m=>m.presence.status == 'offline').size}`)
-      .addField('عدد اعضاء السيرفر',`${message.guild.memberCount}`)
-      message.channel.send(IzRo);
-    });
 	
 	client.on('message', message => {
 
