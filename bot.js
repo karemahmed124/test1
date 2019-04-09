@@ -17,7 +17,7 @@ client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return channel.send(`**- Hello , ${member} :cocktail: **
 **       - You Are in a Big Community :dove: **
-**              - Victoria ,! :black_heart:**`) 
+**              - Thunder :black_heart:**`) 
 }).catch(console.error)
 })
 
